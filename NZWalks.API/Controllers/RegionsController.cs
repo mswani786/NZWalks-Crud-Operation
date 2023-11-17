@@ -87,7 +87,7 @@ namespace NZWalks.API.Controllers
                 Code = regiondomainModel.Code,
                 RegionImageUrl = regiondomainModel.RegionImageUrl,
             };
-            return CreatedAtAction(nameof(GetById), new { id = regiondomainModel.Id }, regionDTO);
+            return CreatedAtAction(nameof(GetById), new { id = regionDTO.Id }, regionDTO);
         }
         #endregion
     }
